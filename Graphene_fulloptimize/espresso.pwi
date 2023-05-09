@@ -1,0 +1,40 @@
+&CONTROL
+   calculation      = 'scf'
+   tstress          = .true.
+   tprnfor          = .true.
+   disk_io          = 'None'
+   pseudo_dir       = '/home/max/Documents/TestQE/all_pbe_UPF_v1.5'
+/
+&SYSTEM
+   ecutwfc          = 40
+   ecutrho          = 400
+   occupations      = 'smearing'
+   degauss          = 0.02
+   input_dft        = 'PBE'
+   vdw_corr         = 'dft-d3'
+   ntyp             = 1
+   nat              = 2
+   ibrav            = 0
+/
+&ELECTRONS
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+C 12.011 c_pbe_v1.2.uspp.F.UPF
+
+K_POINTS automatic
+12 12 1  0 0 0
+
+CELL_PARAMETERS angstrom
+2.60000000000000 0.00000000000000 0.00000000000000
+-1.30000000000000 2.25166604983954 0.00000000000000
+0.00000000000000 0.00000000000000 10.00000000000000
+
+ATOMIC_POSITIONS angstrom
+C 0.0000000000 0.0000000000 0.0000000000 
+C 0.0000000000 1.5011106999 0.0000000000 
+
