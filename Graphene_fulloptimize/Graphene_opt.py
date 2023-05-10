@@ -53,6 +53,7 @@ def OPT(t):
 	return fitfunction(darray,Earray)
 ecut=[]
 bondlenght=[]
+Energy(40,2)
 for j in np.linspace(40,80,5):
     ecut.append(j)
     bondlenght.append(OPT(j))
