@@ -1,0 +1,35 @@
+&CONTROL
+   tstress          = .true.
+   tprnfor          = .true.
+   pseudo_dir       = '/home/max/Documents/TestQE/all_pbe_UPF_v1.5'
+/
+&SYSTEM
+   ecutwfc          = 40
+   ecutrho          = 200
+   ntyp             = 2
+   nat              = 2
+   ibrav            = 0
+/
+&ELECTRONS
+/
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Na 22.98976928 na_pbe_v1.5.uspp.F.UPF
+Cl 35.45 cl_pbe_v1.4.uspp.F.UPF
+
+K_POINTS automatic
+3 3 3  0 0 0
+
+CELL_PARAMETERS angstrom
+0.00000000000000 2.87116422168070 2.87116422168070
+2.87116422168070 0.00000000000000 2.87116422168070
+2.87116422168070 2.87116422168070 0.00000000000000
+
+ATOMIC_POSITIONS angstrom
+Na 0.0000000000 0.0000000000 0.0000000000 
+Cl 2.8711642217 0.0000000000 0.0000000000 
+
